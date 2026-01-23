@@ -7,6 +7,8 @@ body {
 :root {
     --font-body: 'Inter', sans-serif;
     --font-logo: 'Irish Grover', sans-serif;
+    --color-description: #585858;
+    --color-orange: #fe4619;
 }
 .logo {
     font-family: var(--font-logo);
