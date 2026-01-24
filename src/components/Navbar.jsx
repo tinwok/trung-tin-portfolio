@@ -2,7 +2,7 @@ import { navBarData } from '../data/navBavdata';
 function Navbar() {
     return (
         <header className="mt-[80px]">
-            <div className="container mx-auto flex items-center justify-center p-6 lg:px-14 bg-[#1E1D1D] text-white rounded-[56px] py-[16px] font-( --font-irish-grover)">
+            <div className="my-container h-full mx-auto flex items-center justify-center p-6 lg:px-14 bg-[#1E1D1D] text-white rounded-[56px] py-[16px] font-( --font-irish-grover)">
                 <ul className="flex gap-16">
                     {navBarData.map((nav) => (
                         <li

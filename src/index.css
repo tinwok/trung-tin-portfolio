@@ -1,5 +1,6 @@
 @import url('https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Irish+Grover&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Instrument+Sans:ital,wght@0,400..700;1,400..700&family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Irish+Grover&display=swap');
 @import 'tailwindcss';
 body {
     font-family: var(--font-body);
@@ -7,12 +8,16 @@ body {
 :root {
     --font-body: 'Inter', sans-serif;
     --font-logo: 'Irish Grover', sans-serif;
+    --font-secondary: 'Instrument Sans', sans-serif;
     --color-description: #585858;
     --color-orange: #fe4619;
+    --color-secondary: #262626;
+    --color-card: #393939;
 }
 .logo {
     font-family: var(--font-logo);
 }
-.container {
-    max-width: 1200px;
+.my-container {
+    width: 1200px;
+    margin: 0 auto; /* Căn giữa container */
 }

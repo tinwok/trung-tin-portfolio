@@ -1,9 +1,9 @@
 import { AboutData } from '../data/AboutData/AboutData';
-import Button from './Button';
+import Button from './subCompoments/Button';
 function About() {
     return (
         <>
-            <section className="container mx-auto mt-[50px] ">
+            <section className=".my-container mx-auto mt-[50px] ">
                 <div className="top-container flex flex-col items-center justify-center relative">
                     <h1 className="flex items-center px-[18px]  rounded-full border border-solid border-[#9D9696] text-[24px]  ">
                         {AboutData.miniHeader}
