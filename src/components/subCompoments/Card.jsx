@@ -15,7 +15,6 @@ function Card({ image, title, className, children, ...props }) {
                     className="w-full h-full object-cover object-cover object-[50%_0%]"
                 />
             </div>
-
             {children}
         </div>
     );

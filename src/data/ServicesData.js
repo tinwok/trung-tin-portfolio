@@ -7,4 +7,9 @@ export const ServicesData = {
     cardImage1: dataBaseImg,
     cardImage2: webDesignImg,
     cardImage3: landingPageImg,
+    serviceCard: [
+        { id: 1, header: 'Data Base', image: dataBaseImg },
+        { id: 2, header: 'Web Design', image: webDesignImg },
+        { id: 3, header: 'Landing page', image: landingPageImg },
+    ],
 };

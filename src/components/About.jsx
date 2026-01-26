@@ -1,10 +1,10 @@
-import { AboutData } from '../data/AboutData/AboutData';
+import { AboutData } from '../data/AboutData';
 import Button from './subCompoments/Button';
 function About() {
     return (
         <>
             <section className=".my-container mx-auto mt-[50px] ">
-                <div className="top-container flex flex-col items-center justify-center relative">
+                <div className="top-container flex flex-col items-center justify-evenly relative">
                     <h1 className="flex items-center px-[18px]  rounded-full border border-solid border-[#9D9696] text-[24px]  ">
                         {AboutData.miniHeader}
                         <img className="absolute top-[-30px] left-[53%]" src={AboutData.arrowIcon} alt="arrowIcon" />

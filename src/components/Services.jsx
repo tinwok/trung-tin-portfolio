@@ -5,7 +5,10 @@ function Services() {
     return (
         <>
             <div className="my-container bg-[var(--color-secondary)] h-[658px] rounded-[40px] relative">
-                <div className="top-container relative  flex justify-around items-center pt-[100px] after:rounded-full after:content-[''] after:absolute after:bottom-[-20px] after:w-full after:h-[2px] after:bg-[var(--color-description)] ">
+                <div
+                    className="top-container relative  flex justify-around items-center pt-[100px] 
+                after:rounded-full after:content-[''] after:absolute after:bottom-[-20px] after:w-[85%] after:h-[2px] after:bg-[var(--color-description)] "
+                >
                     <h1 className=" text-white text-4xl">
                         {ServicesData.header.map((item, index) => {
                             if (typeof item !== 'string') {
@@ -22,22 +25,36 @@ function Services() {
                     <p className="text-white w-[395px]">{ServicesData.des}</p>
                 </div>
                 <div className="bottom-container mt-[50px] flex justify-evenly  ">
-                    <Card
+                    {ServicesData.serviceCard.map((card) => {
+                        return (
+                            <Card
+                                image={card.image}
+                                title={card.header}
+                                key={card.id}
+                                className="group transition-colors  hover:bg-[var(--color-orange)]"
+                            >
+                                {
+                                    <RoundedButton className="absolute  bottom-5 right-6 group-hover:bg-[var(--color-orange)] z-100 group-hover:rotate-45 duration-100 "></RoundedButton>
+                                }
+                            </Card>
+                        );
+                    })}
+                    {/* <Card
                         title="Data Base"
-                        className="group transition-colors duration-300 hover:bg-[var(--color-orange)] hover:shadow-[0_35px_35px_rgba(0,0,0,0.25)]"
+                        className="group transition-colors  hover:bg-[var(--color-orange)] "
                         image={ServicesData.cardImage1}
                     >
                         {
-                            <RoundedButton className="absolute  bottom-5 right-6 group-hover:bg-[var(--color-orange)] z-100"></RoundedButton>
+                            <RoundedButton className="absolute  bottom-5 right-6 group-hover:bg-[var(--color-orange)] group-duration-300 z-100 group-hover:rotate-45 duration-100"></RoundedButton>
                         }
                     </Card>
                     <Card
                         title="Web Design"
-                        className="group transition-colors duration-300 hover:bg-[var(--color-orange)]"
+                        className="group transition-colors duration-300 hover:bg-[var(--color-orange)] "
                         image={ServicesData.cardImage2}
                     >
                         {
-                            <RoundedButton className="absolute  bottom-5 right-6 group-hover:bg-[var(--color-orange)] z-100"></RoundedButton>
+                            <RoundedButton className="absolute  bottom-5 right-6 group-hover:bg-[var(--color-orange)] z-100 group-hover:rotate-45 duration-100"></RoundedButton>
                         }
                     </Card>
                     <Card
@@ -46,9 +63,9 @@ function Services() {
                         image={ServicesData.cardImage3}
                     >
                         {
-                            <RoundedButton className="absolute  bottom-5 right-6 group-hover:bg-[var(--color-orange)] z-100"></RoundedButton>
+                            <RoundedButton className="absolute  bottom-5 right-6 group-hover:bg-[var(--color-orange)] z-100 group-hover:rotate-45 duration-100 "></RoundedButton>
                         }
-                    </Card>
+                    </Card> */}
                 </div>
             </div>
         </>
