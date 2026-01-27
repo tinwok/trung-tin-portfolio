@@ -7,20 +7,20 @@ function FeedBackCard({ content, authorname, authorCompany, authorPosition, avat
                         <img key={i} src={star.image} alt="star" className="w-4 h-4" />
                     ))}
                 </div>
-                <p className="text-l mb-10">{content}</p>
+                <p className="text-l  mb-10">{content}</p>
                 <div className="flex justify-between items-center">
-                    <div className="flex items-center gap-2 mt-3">
-                        <div className="w-[52px] h-[52px] overflow-hidden rounded-full">
+                    <div className="flex items-center gap-2 lg:mt-3">
+                        <div className="w-[52px] h-[52px]  overflow-hidden rounded-full">
                             <img src={avatar} alt={authorname} className="object-cover w-full h-full" />
                         </div>
                         <div>
-                            <h1 className="font-bold text-xl">{authorname + ', tác giả'}</h1>
-                            <p className="text-l">
+                            <h1 className="font-bold lg:text-xl">{authorname + ', tác giả'}</h1>
+                            <p className="lg:text-l">
                                 {authorCompany}, {authorPosition}
                             </p>
                         </div>
                     </div>
-                    <img className="w-[48px] h-[48px] opacity-50" src={quotationMark} alt=" quotationMark icon" />
+                    <img className="lg:w-[48px] lg:h-[48px] opacity-30" src={quotationMark} alt=" quotationMark icon" />
                 </div>
             </div>
         </div>

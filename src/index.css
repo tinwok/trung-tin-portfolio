@@ -17,7 +17,3 @@ body {
 .logo {
     font-family: var(--font-logo);
 }
-.my-container {
-    width: 1200px;
-    margin: 0 auto; /* Căn giữa container */
-}

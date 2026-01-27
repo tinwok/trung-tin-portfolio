@@ -1,15 +1,17 @@
 import { ServicesData } from '../data/ServicesData';
 import RoundedButton from './subCompoments/RoundedButton';
 import Card from './subCompoments/Card';
+import ServicesCardMobile from './subCompoments/ServicesCardMobile';
 function Services() {
     return (
-        <>
-            <div className="my-container bg-[var(--color-secondary)] h-[658px] rounded-[40px] relative">
+        <section className="px-6">
+            <div className="lg:max-w-[1200px] mx-auto w-full  bg-[var(--color-secondary)] lg:h-[658px] rounded-[40px] relative">
+                {/* top-container */}
                 <div
-                    className="top-container relative  flex justify-around items-center pt-[100px] 
+                    className=" relative  w-full  flex flex-col items-center text-center  lg:flex-row lg:justify-around lg:items-center pt-[50px] lg:pt-[100px] 
                 after:rounded-full after:content-[''] after:absolute after:bottom-[-20px] after:w-[85%] after:h-[2px] after:bg-[var(--color-description)] "
                 >
-                    <h1 className=" text-white text-4xl">
+                    <h1 className=" text-white text-xl lg:text-4xl ">
                         {ServicesData.header.map((item, index) => {
                             if (typeof item !== 'string') {
                                 return (
@@ -22,9 +24,10 @@ function Services() {
                             }
                         })}
                     </h1>
-                    <p className="text-white w-[395px]">{ServicesData.des}</p>
+                    <p className="text-white text-l max-w-[395px] ">{ServicesData.des}</p>
                 </div>
-                <div className="bottom-container mt-[50px] flex justify-evenly  ">
+                {/* bottom-container */}
+                <div className=" mt-[50px] lg:flex justify-evenly hidden   ">
                     {ServicesData.serviceCard.map((card) => {
                         return (
                             <Card
@@ -39,36 +42,10 @@ function Services() {
                             </Card>
                         );
                     })}
-                    {/* <Card
-                        title="Data Base"
-                        className="group transition-colors  hover:bg-[var(--color-orange)] "
-                        image={ServicesData.cardImage1}
-                    >
-                        {
-                            <RoundedButton className="absolute  bottom-5 right-6 group-hover:bg-[var(--color-orange)] group-duration-300 z-100 group-hover:rotate-45 duration-100"></RoundedButton>
-                        }
-                    </Card>
-                    <Card
-                        title="Web Design"
-                        className="group transition-colors duration-300 hover:bg-[var(--color-orange)] "
-                        image={ServicesData.cardImage2}
-                    >
-                        {
-                            <RoundedButton className="absolute  bottom-5 right-6 group-hover:bg-[var(--color-orange)] z-100 group-hover:rotate-45 duration-100"></RoundedButton>
-                        }
-                    </Card>
-                    <Card
-                        title="Landing page"
-                        className="group transition-colors duration-300 hover:bg-[var(--color-orange)]"
-                        image={ServicesData.cardImage3}
-                    >
-                        {
-                            <RoundedButton className="absolute  bottom-5 right-6 group-hover:bg-[var(--color-orange)] z-100 group-hover:rotate-45 duration-100 "></RoundedButton>
-                        }
-                    </Card> */}
                 </div>
+                <ServicesCardMobile></ServicesCardMobile>
             </div>
-        </>
+        </section>
     );
 }
 

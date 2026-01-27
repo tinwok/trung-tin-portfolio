@@ -3,7 +3,7 @@ import SendEmailInputForm from './subCompoments/SendEmailInputForm';
 import EmailIcon from '../assets/emailIcon.svg';
 function SendEmail() {
     return (
-        <section className="my-container w-full h-[320px] flex flex-col justify-evenly text-center">
+        <section className="max-w-[1200px] mx-auto px-6  h-[320px] flex flex-col justify-evenly text-center">
             <h1 className="   mx-auto font-[var(--font-secondary)] text-4xl w-[504px]">
                 {SendEmailData.header.map((item, index) => {
                     return typeof item === 'string' ? (

@@ -3,14 +3,14 @@ import Button from './subCompoments/Button';
 function About() {
     return (
         <>
-            <section className=".my-container mx-auto mt-[50px] ">
+            <section className="lg:max-w-1200px w-full px-6 mx-auto mt-[50px] ">
                 <div className="top-container flex flex-col items-center justify-evenly relative">
                     <h1 className="flex items-center px-[18px]  rounded-full border border-solid border-[#9D9696] text-[24px]  ">
                         {AboutData.miniHeader}
                         <img className="absolute top-[-30px] left-[53%]" src={AboutData.arrowIcon} alt="arrowIcon" />
                     </h1>
 
-                    <h1 className="text-[82px] w-[550px] text-center font-medium">
+                    <h1 className=" text-[32px] lg:text-[82px] w-[550px] text-center font-medium">
                         {AboutData.header.map((item, index) => {
                             if (typeof item === 'string') {
                                 return item;
@@ -24,18 +24,18 @@ function About() {
                         })}
                     </h1>
                 </div>
-                <div className="bottom-container flex justify-center items-center mt-[-80px]">
-                    <div className="box w-[260px]">
+                <div className="bottom-container flex justify-center items-center lg:mt-[-80px]">
+                    <div className="box lg:w-[260px]">
                         <img src={AboutData.quotationIcon} alt="quotationMarkss" />
-                        <p className="text-[var(--color-description)] font-medium ml-[20px] text-xm ">
+                        <p className="text-[var(--color-description)] font-medium ml-[20px] lg:text-xm ">
                             {AboutData.des}
                         </p>
                         <div className="flex flex-col mt-[10px]">
-                            <span className="font-semibold text-[25px]">{AboutData.stateNumber}</span>
-                            <p className="text-[var(--color-description)] text-base"> {AboutData.stateDes}</p>
+                            <span className="font-semibold lg:text-[25px]">{AboutData.stateNumber}</span>
+                            <p className="text-[var(--color-description)] lg:text-base"> {AboutData.stateDes}</p>
                         </div>
                     </div>
-                    <div className="box z-1 relative">
+                    <div className="box z-1 relative lg:block hidden">
                         <img className="w-auto h-full " src={AboutData.avatar} alt="Avatar " />
                         <div className="flex justify-center absolute bottom-5 left-1/10 gap-4 items-center">
                             <Button className="hover:bg-[var(--color-orange)] hover:border-[var(--color-orange)] hover:text-white">
@@ -51,7 +51,7 @@ function About() {
                             />
                         </div>
                     </div>
-                    <div className="box w-[260px] ml-[50px]">
+                    <div className="box  lg:w-[260px] lg:ml-[50px] hidden lg:block">
                         <div className="justify-center">
                             <div className="star-icon-box flex  ">
                                 <img src={AboutData.staricon} alt="Star icon" />
@@ -61,8 +61,8 @@ function About() {
                                 <img src={AboutData.staricon} alt="Star icon" />
                             </div>
                             <div className="box-experience flex flex-col">
-                                <span className="font-medium text-[36px]">{AboutData.experience}</span>
-                                <p className="text-[24px] text-[var(--color-description)] ">
+                                <span className="font-medium text-[18px] lg:text-[36px]">{AboutData.experience}</span>
+                                <p className="lg:text-[24px] text-[var(--color-description)] ">
                                     {' '}
                                     {AboutData.experienceDes}
                                 </p>

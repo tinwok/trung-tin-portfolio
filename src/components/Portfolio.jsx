@@ -11,9 +11,9 @@ import 'swiper/css/pagination';
 
 function Portfolio() {
     return (
-        <section className="my-container mb-[120px]">
-            <div className="flex top-container justify-between items-center mt-[70px]">
-                <h1 className="text-3xl">
+        <section className="max-w-[1200px] mx-auto mb-[120px]">
+            <div className="lg:flex-row lg:flex top-container px-6  justify-between items-center mt-[70px]">
+                <h1 className=" text-xl text-center lg:text-3xl">
                     {PortfolioData.header.map((item, index) => {
                         if (typeof item === 'string') return item;
                         return (
@@ -23,11 +23,11 @@ function Portfolio() {
                         );
                     })}
                 </h1>
-                <Button className="p-2 text-[28px]  hover:bg-[var(--color-orange)] hover:border-[var(--color-orange)] hover:text-white">
+                <Button className="p-2 text-[28px] lg:block hidden  hover:bg-[var(--color-orange)] hover:border-[var(--color-orange)] hover:text-white">
                     Xem thêm
                 </Button>
             </div>
-            <div className="portfolio-galery mt-[82px]  mb-[80px]">
+            <div className="portfolio-galery mt-[40px] lg:mt-[82px]  mb-[80px]">
                 <Swiper
                     slidesPerView="auto"
                     spaceBetween={24}
