@@ -1,4 +1,4 @@
-import avatar2 from '../assets/avatar2.png';
+import avatar2 from '../assets/avatar2.PNG';
 export const HireMeData = {
     header: ['Lý do tại sao bạn ', { hightlight: 'nên chọn ' }, 'tôi cho dự án tiếp theo ?'],
     description:

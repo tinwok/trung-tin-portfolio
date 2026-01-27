@@ -1,6 +1,6 @@
 import { FooterData } from '../data/FooterData';
 import Button from './subCompoments/Button';
-import MainIcon from './subCompoments/mainIcon';
+import MainIcon from './subCompoments/MainIcon';
 import tinLogo from '../assets/tinLogo.svg';
 import facebookIcon from '../assets/facebook-icon.svg';
 import instagram from '../assets/instagram.svg';
