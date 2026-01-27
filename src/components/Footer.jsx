@@ -21,7 +21,7 @@ function Footer() {
                 >
                     <div className="left-side w-[431px]">
                         <MainIcon name="Tin" image={tinLogo} className="mb-[28px]"></MainIcon>
-                        <p className="lg:text-xl">{FooterData.des}</p>
+                        <p className="text-l lg:text-xl">{FooterData.des}</p>
                         <div className="flex gap-10 items-center">
                             <a href="#">
                                 <img src={facebookIcon} alt={facebookIcon + 'icon'} />
@@ -32,10 +32,13 @@ function Footer() {
                         </div>
                     </div>
                     <div className=" flex gap-30 justify-evenly">
-                        <ul className="flex flex-col gap-5 lg:block hidden">
+                        <ul className="lg:flex flex-col gap-5 hidden">
                             {FooterData.navigation.map((item) => {
                                 return (
-                                    <li key={item.id} className="first:text-red-500 first:text-medium first:text-xl">
+                                    <li
+                                        key={item.id}
+                                        className="first:text-[var(--color-orange)] first:font-bold first:text-xl"
+                                    >
                                         <a href="#">{item.content} </a>
                                     </li>
                                 );
@@ -44,7 +47,10 @@ function Footer() {
                         <ul className="flex flex-col gap-5">
                             {FooterData.contact.map((item) => {
                                 return (
-                                    <li key={item.id} className="first:text-red-500 first:text-medium first:text-xl">
+                                    <li
+                                        key={item.id}
+                                        className="first:text-[var(--color-orange)]  first:font-bold first:text-xl"
+                                    >
                                         <a href="#">{item.content} </a>
                                     </li>
                                 );

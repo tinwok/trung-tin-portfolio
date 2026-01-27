@@ -8,7 +8,7 @@ function Services() {
             <div className="lg:max-w-[1200px] mx-auto w-full  bg-[var(--color-secondary)] lg:h-[658px] rounded-[40px] relative">
                 {/* top-container */}
                 <div
-                    className=" relative  w-full  flex flex-col items-center text-center  lg:flex-row lg:justify-around lg:items-center pt-[50px] lg:pt-[100px] 
+                    className=" relative  w-full  flex flex-col items-center text-center  lg:flex-row lg:justify-around lg:items-center pt-[20px] lg:pt-[100px] 
                 after:rounded-full after:content-[''] after:absolute after:bottom-[-20px] after:w-[85%] after:h-[2px] after:bg-[var(--color-description)] "
                 >
                     <h1 className=" text-white text-xl lg:text-4xl ">
