@@ -7,7 +7,7 @@ import instagram from '../assets/instagram.svg';
 function Footer() {
     return (
         <section className=" px-6   text-white  font-(family-name:--font-secondary)">
-            <div className="max-w-[1200px] mx-auto bg-[var(--color-secondary)] h-[572px] rounded-t-4xl p-10 lg:p-20">
+            <div className="max-w-[1200px] mx-auto bg-[var(--color-secondary)] lg:h-[572px] rounded-t-4xl p-10 lg:p-20">
                 <div
                     className="header flex justify-between relative after:content-[''] 
                 after:absolute after:w-[105%] after:bg-[var(--color-description)] after:bottom-[-20px] after:left-[-10px] after:h-[1px] after:rounded-full"
@@ -16,7 +16,7 @@ function Footer() {
                     <Button className="!bg-[var(--color-orange)] border-[var(--color-orange)]">Hire Me</Button>
                 </div>
                 <div
-                    className="bottom-box flex justify-between mt-[108px] relative
+                    className="bottom-box flex justify-between mt-[50px] lg:mt-[108px] relative
                after:absolute after:w-[105%] after:bg-[var(--color-description)] after:bottom-[-20px] after:left-[-10px] after:h-[1px] after:rounded-full"
                 >
                     <div className="left-side w-[431px]">
