@@ -1,7 +1,7 @@
 import RoundedButton from './RoundedButton';
 
 function PortfolioCard({ img, className = '' }) {
-    const baseClassName = ' h-[316px] rounded-[24px] bg-gray-500 overflow-hidden relative  hover:cursor-pointer';
+    const baseClassName = ' lg:h-[316px] rounded-[24px] bg-gray-500 overflow-hidden relative  hover:cursor-pointer';
     return (
         <div className={`${baseClassName} ${className}`}>
             <div>

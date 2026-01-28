@@ -10,9 +10,9 @@ import 'swiper/css/pagination';
 
 function FeedBack() {
     return (
-        <section className=" px-6 ">
-            <div className="max-w-[1200px] mx-auto bg-[var(--color-secondary)] rounded-[30px] lg:h-[668px] flex flex-col items-center">
-                <h1 className="text-white text-center mt-[22px] mb-[22px]  lg:mt-[82px] lg:mb-[87px] text-xl lg:text-4xl w-[474px]">
+        <section>
+            <div className="max-w-[1200px] mx-auto bg-[var(--color-secondary)] lg:rounded-[30px] lg:h-[668px] flex flex-col items-center">
+                <h1 className="text-white text-center mt-[22px] mb-[22px]  lg:mt-[82px] lg:mb-[87px] text-l lg:text-4xl w-[474px]">
                     {FeedBackData.header.map((item, index) => {
                         if (typeof item !== 'string')
                             return (
@@ -23,7 +23,7 @@ function FeedBack() {
                         return item;
                     })}
                 </h1>
-                <div className="w-full h-[300px]">
+                <div className="w-full pb-5 lg:h-[300px]">
                     <Swiper
                         speed={3000}
                         loop={true}

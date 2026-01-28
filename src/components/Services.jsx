@@ -4,8 +4,8 @@ import Card from './subCompoments/Card';
 import ServicesCardMobile from './subCompoments/ServicesCardMobile';
 function Services() {
     return (
-        <section className="px-6">
-            <div className="lg:max-w-[1200px] mx-auto w-full  bg-[var(--color-secondary)] lg:h-[658px] rounded-[40px] relative">
+        <section>
+            <div className="lg:max-w-[1200px] mx-auto w-full  bg-[var(--color-secondary)] lg:h-[658px] lg:rounded-[40px] relative">
                 {/* top-container */}
                 <div
                     className=" relative  w-full  flex flex-col items-center text-center  lg:flex-row lg:justify-around lg:items-center pt-[20px] lg:pt-[100px] 
@@ -24,7 +24,7 @@ function Services() {
                             }
                         })}
                     </h1>
-                    <p className="text-white text-l max-w-[395px] ">{ServicesData.des}</p>
+                    <p className="text-white lg:text-l max-w-[395px] ">{ServicesData.des}</p>
                 </div>
                 {/* bottom-container */}
                 <div className=" mt-[50px] lg:flex justify-evenly hidden   ">

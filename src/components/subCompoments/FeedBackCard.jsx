@@ -1,21 +1,21 @@
 function FeedBackCard({ content, authorname, authorCompany, authorPosition, avatar, quotationMark, fivestar }) {
     return (
-        <div className="h-[257px]  bg-[var(--color-card)] rounded-4xl p-3 flex flex-col  text-white font-[var(--font-secondary)]">
-            <div className="p-7">
+        <div className="lg:h-[257px]  bg-[var(--color-card)] rounded-xl p-3 flex flex-col  text-white font-[var(--font-secondary)]">
+            <div className="lg:p-7 p-2">
                 <div className="flex gap-1 mb-2">
                     {fivestar.map((star, i) => (
                         <img key={i} src={star.image} alt="star" className="w-4 h-4" />
                     ))}
                 </div>
-                <p className="text-l  mb-10">{content}</p>
+                <p className="lg:text-l  text-xs mb-4 lg:mb-10">{content}</p>
                 <div className="flex justify-between items-center">
-                    <div className="flex items-center gap-2 lg:mt-3">
-                        <div className="w-[52px] h-[52px]  overflow-hidden rounded-full">
+                    <div className="flex items-center gap-4 lg:mt-3">
+                        <div className="lg:w-[52px] lg:h-[52px] w-[32px] h-[32px] overflow-hidden rounded-full">
                             <img src={avatar} alt={authorname} className="object-cover w-full h-full" />
                         </div>
                         <div>
-                            <h1 className="font-bold lg:text-xl">{authorname + ', tác giả'}</h1>
-                            <p className="lg:text-l">
+                            <h1 className="font-bold text-s lg:text-xl">{authorname + ', tác giả'}</h1>
+                            <p className="lg:text-l text-xs">
                                 {authorCompany}, {authorPosition}
                             </p>
                         </div>

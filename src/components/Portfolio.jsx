@@ -11,8 +11,8 @@ import 'swiper/css/pagination';
 
 function Portfolio() {
     return (
-        <section className="max-w-[1200px] mx-auto mb-[120px]">
-            <div className="lg:flex-row lg:flex top-container px-6  justify-between items-center mt-[70px]">
+        <section className="max-w-[1200px] mx-auto my-6 lg:mb-[120px]">
+            <div className="lg:flex-row lg:flex top-container px-6  justify-between items-center lg:mt-[70px]">
                 <h1 className=" text-xl text-center lg:text-3xl">
                     {PortfolioData.header.map((item, index) => {
                         if (typeof item === 'string') return item;
@@ -27,7 +27,7 @@ function Portfolio() {
                     Xem thêm
                 </Button>
             </div>
-            <div className="portfolio-galery mt-[40px] lg:mt-[82px]  mb-[80px]">
+            <div className="portfolio-galery mt-[20px] lg:mt-[40px] lg:mt-[82px]  lg:mb-[80px]">
                 <Swiper
                     slidesPerView="auto"
                     spaceBetween={24}
@@ -55,7 +55,7 @@ function Portfolio() {
                 >
                     {PortfolioData.portfolioImage.map((img) => (
                         <SwiperSlide key={img.id}>
-                            <PortfolioCard img={img} className=" hover:bg-[var(--color-orange)] group" />
+                            <PortfolioCard img={img} className=" hover:bg-[var(--color-orange)] group h-[200px]" />
                         </SwiperSlide>
                     ))}
                 </Swiper>

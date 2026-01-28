@@ -10,7 +10,7 @@ function About() {
                         <img className="absolute top-[-30px] left-[53%]" src={AboutData.arrowIcon} alt="arrowIcon" />
                     </h1>
 
-                    <h1 className=" text-[32px] lg:text-[82px] w-[550px] text-center font-medium">
+                    <h1 className=" text-[24px] lg:text-[82px] w-[550px] text-center font-medium">
                         {AboutData.header.map((item, index) => {
                             if (typeof item === 'string') {
                                 return item;
@@ -27,7 +27,7 @@ function About() {
                 <div className="bottom-container flex justify-center items-center lg:mt-[-80px]">
                     <div className="box lg:w-[260px]">
                         <img src={AboutData.quotationIcon} alt="quotationMarkss" />
-                        <p className="text-[var(--color-description)] font-medium ml-[20px] lg:text-xm ">
+                        <p className="text-[var(--color-description)] font-medium ml-[20px] text-sm lg:text-xm ">
                             {AboutData.des}
                         </p>
                         <div className="flex flex-col mt-[10px]">
