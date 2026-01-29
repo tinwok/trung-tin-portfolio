@@ -37,7 +37,7 @@ function HireMe() {
                             );
                         })}
                     </div>
-                    <Button className="lg:px-2 hover:bg-[var(--color-orange)] hover:border-[var(--color-orange)] hover:text-white">
+                    <Button className="px-6 lg:py-2 hover:bg-[var(--color-orange)] hover:border-[var(--color-orange)] hover:text-white">
                         Hire Me
                     </Button>
                 </div>

@@ -7,7 +7,7 @@ function Experiences() {
                 <div className="experiences-container flex  flex-col justify-around mt-[20px] lg:mt-[60px] gap-8">
                     {ExperiencesData.info.map((item, index) => {
                         return (
-                            <div className="flex justify-around ">
+                            <div className="flex justify-around gap-5 ">
                                 {/* left side */}
                                 <div
                                     className={
