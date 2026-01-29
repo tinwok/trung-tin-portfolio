@@ -12,7 +12,7 @@ function FeedBack() {
     return (
         <section>
             <div className="max-w-[1200px] mx-auto bg-[var(--color-secondary)] lg:rounded-[30px] lg:h-[668px] flex flex-col items-center">
-                <h1 className="text-white text-center mt-[22px] mb-[22px]  lg:mt-[82px] lg:mb-[87px] text-l lg:text-4xl w-[474px]">
+                <h1 className="text-white text-center mt-[22px] mb-[22px]  lg:mt-[82px] lg:mb-[87px] text-lg lg:text-4xl w-[474px]">
                     {FeedBackData.header.map((item, index) => {
                         if (typeof item !== 'string')
                             return (

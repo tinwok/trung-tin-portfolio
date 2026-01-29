@@ -7,7 +7,7 @@ function FeedBackCard({ content, authorname, authorCompany, authorPosition, avat
                         <img key={i} src={star.image} alt="star" className="w-4 h-4" />
                     ))}
                 </div>
-                <p className="lg:text-l  text-xs mb-4 lg:mb-10">{content}</p>
+                <p className="lg:text-xl  text-xs mb-4 lg:mb-10">{content}</p>
                 <div className="flex justify-between items-center">
                     <div className="flex items-center gap-4 lg:mt-3">
                         <div className="lg:w-[52px] lg:h-[52px] w-[32px] h-[32px] overflow-hidden rounded-full">
@@ -15,7 +15,7 @@ function FeedBackCard({ content, authorname, authorCompany, authorPosition, avat
                         </div>
                         <div>
                             <h1 className="font-bold text-s lg:text-xl">{authorname + ', tác giả'}</h1>
-                            <p className="lg:text-l text-xs">
+                            <p className="lg:text-lg text-xs">
                                 {authorCompany}, {authorPosition}
                             </p>
                         </div>

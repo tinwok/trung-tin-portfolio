@@ -7,7 +7,11 @@ function About() {
                 <div className="top-container flex flex-col items-center justify-evenly relative">
                     <h1 className="flex items-center px-[18px]  rounded-full border border-solid border-[#9D9696] text-[24px]  ">
                         {AboutData.miniHeader}
-                        <img className="absolute top-[-30px] left-[53%]" src={AboutData.arrowIcon} alt="arrowIcon" />
+                        <img
+                            className="absolute top-[-30px] left-[53%]  animate-bounce"
+                            src={AboutData.arrowIcon}
+                            alt="arrowIcon"
+                        />
                     </h1>
 
                     <h1 className=" text-[24px] lg:text-[82px] w-[550px] text-center font-medium">
@@ -37,16 +41,16 @@ function About() {
                     </div>
                     <div className="box z-1 relative lg:block hidden">
                         <img className="w-auto h-full " src={AboutData.avatar} alt="Avatar " />
-                        <div className="flex justify-center absolute bottom-5 left-1/10 gap-4 items-center">
+                        <div className="flex justify-center absolute bottom-5 left-8 gap-4 items-center">
                             <Button className="hover:bg-[var(--color-orange)] hover:border-[var(--color-orange)] hover:text-white">
                                 Portfolio
                             </Button>
-                            <Button className="hover:bg-[var(--color-orange)] hover:border-[var(--color-orange)] hover:text-white">
+                            <Button className="hover:bg-[var(--color-orange)] hover:border-[var(--color-orange)] hover:text-white t">
                                 Hire Me
                             </Button>
                             <img
                                 src={AboutData.blackarrowIcon}
-                                className="z-10 absolute  left-[-70px] bottom-[5px]"
+                                className="z-10 absolute  animate-bounce left-[-70px] bottom-[5px]"
                                 alt="black arrow icon"
                             />
                         </div>

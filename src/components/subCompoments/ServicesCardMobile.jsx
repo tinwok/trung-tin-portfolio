@@ -8,7 +8,7 @@ import 'swiper/css';
 import 'swiper/css/pagination';
 function ServicesCardMobile() {
     return (
-        <div className="mt-[50px] lg:hidden h-[370px]">
+        <div className="mt-6 lg:mt-[50px] lg:hidden pb-5 lg:h-[370px]">
             <Swiper
                 slidesPerView="auto"
                 spaceBetween={24}
@@ -25,7 +25,7 @@ function ServicesCardMobile() {
                             <Card
                                 image={card.image}
                                 title={card.header}
-                                className="group transition-colors  hover:bg-[var(--color-orange)]"
+                                className="group transition-colors  hover:bg-[var(--color-orange)] "
                             >
                                 <RoundedButton className="absolute  bottom-5 right-6 group-hover:bg-[var(--color-orange)] z-100 group-hover:rotate-45 duration-100 "></RoundedButton>
                             </Card>

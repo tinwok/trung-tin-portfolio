@@ -5,7 +5,7 @@ import ServicesCardMobile from './subCompoments/ServicesCardMobile';
 function Services() {
     return (
         <section>
-            <div className="lg:max-w-[1200px] mx-auto w-full  bg-[var(--color-secondary)] lg:h-[658px] lg:rounded-[40px] relative">
+            <div className="lg:max-w-[1200px] mx-auto  w-full  bg-[var(--color-secondary)]  lg:h-[658px] lg:rounded-[40px] relative">
                 {/* top-container */}
                 <div
                     className=" relative  w-full  flex flex-col items-center text-center  lg:flex-row lg:justify-around lg:items-center pt-[20px] lg:pt-[100px] 
@@ -34,10 +34,10 @@ function Services() {
                                 image={card.image}
                                 title={card.header}
                                 key={card.id}
-                                className="group transition-colors  hover:bg-[var(--color-orange)]"
+                                className="group transition-colors  hover:bg-[var(--color-orange)] hover:scale-[1.02] transition-all  duration-700 ease-in-out"
                             >
                                 {
-                                    <RoundedButton className="absolute  bottom-5 right-6 group-hover:bg-[var(--color-orange)] z-100 group-hover:rotate-45 duration-100 "></RoundedButton>
+                                    <RoundedButton className="absolute  bottom-5 right-6 group-hover:bg-[var(--color-orange)] group-transition duration-150 ease-in z-20 group-hover:rotate-45 duration-100 "></RoundedButton>
                                 }
                             </Card>
                         );

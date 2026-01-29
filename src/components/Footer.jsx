@@ -12,7 +12,7 @@ function Footer() {
                     className="header flex justify-between relative after:content-[''] 
                 after:absolute after:w-[105%] after:bg-[var(--color-description)] after:bottom-[-20px] after:left-[-10px] after:h-[1px] after:rounded-full"
                 >
-                    <h1 className="lg:text-4xl text-l">{FooterData.header}</h1>
+                    <h1 className="lg:text-4xl text-base">{FooterData.header}</h1>
                     <Button className="!bg-[var(--color-orange)] border-[var(--color-orange)] !text-[18px]">
                         Hire Me
                     </Button>
