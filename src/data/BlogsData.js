@@ -1,4 +1,4 @@
-import { ImageData } from '../assets/imageData';
+import { ImagesData } from '../assets/ImagesData';
 export const BlogsData = {
     header: [
         'Từ ',
@@ -9,8 +9,8 @@ export const BlogsData = {
     ],
 
     images: [
-        { id: 1, image: ImageData.blog.thumb1 },
-        { id: 2, image: ImageData.blog.thumb2 },
-        { id: 3, image: ImageData.blog.thumb3 },
+        { id: 1, image: ImagesData.blog.thumb1 },
+        { id: 2, image: ImagesData.blog.thumb2 },
+        { id: 3, image: ImagesData.blog.thumb3 },
     ],
 };
