@@ -34,7 +34,7 @@ function Services() {
                                 image={card.image}
                                 title={card.header}
                                 key={card.id}
-                                className="group transition-colors  hover:bg-[var(--color-orange)] hover:scale-[1.02] transition-all  duration-700 ease-in-out"
+                                className="group transition-colors  hover:bg-[var(--color-orange)] duration-700"
                             >
                                 {
                                     <RoundedButton className="absolute  bottom-5 right-6 group-hover:bg-[var(--color-orange)] group-transition duration-150 ease-in z-20 group-hover:rotate-45 duration-100 "></RoundedButton>

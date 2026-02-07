@@ -3,9 +3,9 @@ import Button from './subCompoments/Button';
 function About() {
     return (
         <>
-            <section className="lg:max-w-1200px w-full px-6 mx-auto mt-[50px] ">
+            <section className="lg:max-w-1200px w-full px-6 mx-auto mt-[50px]">
                 <div className="top-container flex flex-col items-center justify-evenly relative">
-                    <h1 className="flex items-center px-[18px]  rounded-full border border-solid border-[#9D9696] text-[24px]  ">
+                    <h1 className="flex items-center px-[18px] rounded-full border border-solid border-[#9D9696] text-[24px]  ">
                         {AboutData.miniHeader}
                         <img
                             className="absolute top-[-30px] left-[53%]  animate-bounce"
@@ -28,7 +28,8 @@ function About() {
                         })}
                     </h1>
                 </div>
-                <div className="bottom-container flex justify-center items-center lg:mt-[-80px]">
+                {/* bottom */}
+                <div className="bottom-container flex justify-center items-center lg:mt-[-80px] mx-auto">
                     <div className="box lg:w-[260px]">
                         <img src={AboutData.quotationIcon} alt="quotationMarkss" />
                         <p className="text-[var(--color-description)] font-medium ml-[20px] text-sm lg:text-xm ">
@@ -39,7 +40,7 @@ function About() {
                             <p className="text-[var(--color-description)] lg:text-base"> {AboutData.stateDes}</p>
                         </div>
                     </div>
-                    <div className="box z-1 relative lg:block hidden">
+                    <div className="box z-1  relative flex justify-center items-center lg:block hidden">
                         <img className="w-auto h-full " src={AboutData.avatar} alt="Avatar " />
                         <div className="flex justify-center absolute bottom-5 left-8 gap-4 items-center">
                             <Button className="hover:bg-[var(--color-orange)] hover:border-[var(--color-orange)] hover:text-white">

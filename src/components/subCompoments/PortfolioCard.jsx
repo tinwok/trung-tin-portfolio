@@ -10,7 +10,7 @@ function PortfolioCard({ img, className = '' }) {
             {/* OVERLAY */}
             <div className="absolute inset-0 bg-black/10 opacity-0 transition-opacity duration-300 group-hover:opacity-100" />
 
-            <RoundedButton className="absolute right-4 bottom-4 group-hover:bg-[var(--color-orange)] group-hover:rotate-45 duration-100 "></RoundedButton>
+            <RoundedButton className="absolute right-4 bottom-4 group-hover:bg-[var(--color-orange)] group-hover:rotate-45 duration-300 "></RoundedButton>
         </div>
     );
 }

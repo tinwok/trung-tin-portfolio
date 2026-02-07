@@ -4,10 +4,10 @@ function MainIcon({ name, image, textSize, logoSize, className = '' }) {
             <img
                 src={image}
                 alt={name + ' image'}
-                className={`w-${logoSize} h-${logoSize} lg:w-15 lg:h-15 object-contain`}
+                className={`w-${logoSize} h-${logoSize} lg:w-12 lg:h-12 object-contain`}
             />
             <h1
-                className={`font-(family-name:--font-logo) text-white text-${textSize} lg:text-4xl hover:text-[var(--color-orange)] `}
+                className={`font-(family-name:--font-logo) text-white text-${textSize} lg:text-3xl hover:text-[var(--color-orange)] `}
             >
                 {name}
             </h1>

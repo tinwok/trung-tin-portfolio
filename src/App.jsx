@@ -1,28 +1,55 @@
-import Navbar from './components/Navbar';
-import About from './components/About';
-import Services from './components/Services';
-import Experiences from './components/Experiences';
-import HireMe from './components/HireMe';
-import Portfolio from './components/Portfolio';
-import FeedBack from './components/FeedBack';
-import SendEmail from './components/SendEmail';
-import Footer from './components/Footer';
+import Layout from './Layouts/mainLayout';
+import Main from './components/Pages/MainPage';
+import BlogPage from './components/Pages/BlogPage/BlogPage';
+import BlogEditor from './components/Pages/BlogPage/BlogEditor';
+import BlogDetail from './components/Pages/BlogPage/BlogDetail';
+import { Toaster } from 'react-hot-toast';
+
+import { createBrowserRouter } from 'react-router';
+import { RouterProvider } from 'react-router/dom';
+import { blogEditLoader, blogListDetailLoader, blogListLoader } from './loader/blogLoaders';
+import { blogEditAction, blogDeleteAction } from './action/blogAction';
 import './App.css';
 import './index.css';
+const router = createBrowserRouter([
+    {
+        path: '/',
+        element: <Layout />,
+        children: [
+            {
+                index: true,
+                element: <Main />,
+                loader: blogListLoader,
+            },
+            {
+                path: '/blogs',
+                element: <BlogPage />,
+                loader: blogListLoader,
+            },
+            {
+                path: '/blogs/create',
+                element: <BlogEditor />,
+                loader: blogEditLoader,
+                action: blogEditAction,
+            },
+            {
+                path: '/blogs/:id',
+                element: <BlogDetail />,
+                loader: blogListDetailLoader,
+                action: blogDeleteAction,
+            },
+            {
+                path: '/blogs/:id/edit',
+                element: <BlogEditor />,
+                loader: blogEditLoader,
+                action: blogEditAction,
+            },
+        ],
+    },
+]);
+
 function App() {
-    return (
-        <>
-            <Navbar />
-            <About />
-            <Services />
-            <Experiences />
-            <HireMe></HireMe>
-            <Portfolio></Portfolio>
-            <FeedBack />
-            <SendEmail></SendEmail>
-            <Footer></Footer>
-        </>
-    );
+    return <RouterProvider router={router} />;
 }
 
 export default App;

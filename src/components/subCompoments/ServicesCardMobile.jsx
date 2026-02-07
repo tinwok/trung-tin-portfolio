@@ -25,9 +25,9 @@ function ServicesCardMobile() {
                             <Card
                                 image={card.image}
                                 title={card.header}
-                                className="group transition-colors  hover:bg-[var(--color-orange)] "
+                                className="group transition-colors  hover:bg-[var(--color-orange)] duration-300"
                             >
-                                <RoundedButton className="absolute  bottom-5 right-6 group-hover:bg-[var(--color-orange)] z-100 group-hover:rotate-45 duration-100 "></RoundedButton>
+                                <RoundedButton className="absolute  bottom-5 right-6 group-hover:bg-[var(--color-orange)] z-100 group-hover:rotate-45 duration-300 "></RoundedButton>
                             </Card>
                         </SwiperSlide>
                     );

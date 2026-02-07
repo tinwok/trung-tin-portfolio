@@ -26,9 +26,9 @@ function HireMe() {
                         </p>
                     </div>
                     <div className="flex lg:gap-20 gap-5 lg:mb-[38px]  my-2  lg:mt-[38px]">
-                        {HireMeData.state.map((item) => {
+                        {HireMeData.state.map((item, index) => {
                             return (
-                                <div>
+                                <div key={index}>
                                     <span className="lg:text-2xl text-m font-semibold">{item.stateNumber}</span>
                                     <p className="text-[var(--color-description)] text-xs lg:text-xl font-medium">
                                         {item.stateDes}
