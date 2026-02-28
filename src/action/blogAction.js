@@ -19,7 +19,9 @@ export async function blogEditAction({ request, params }) {
             const newBlog = await response.json();
             toast.success('Đã thêm thành công');
             return redirect(`/blogs/${newBlog.id}`);
-        } catch (error) {}
+        } catch (error) {
+            toast.error('Thêm thất bại!');
+        }
     } else {
         try {
             await fetch(`${import.meta.env.VITE_API_ENDPOINT}/blogs/${params.id}`, {

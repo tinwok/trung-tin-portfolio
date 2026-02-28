@@ -42,9 +42,9 @@ const navBarData = [
 ];
 const BlogNavbarData = [
     {
-        path: '/blogs',
+        path: '/',
         id: 1,
-        title: 'Blogs',
+        title: 'Trang chủ',
     },
     {
         path: '/',

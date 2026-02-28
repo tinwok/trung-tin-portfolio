@@ -3,8 +3,8 @@ import Main from './components/Pages/MainPage';
 import BlogPage from './components/Pages/BlogPage/BlogPage';
 import BlogEditor from './components/Pages/BlogPage/BlogEditor';
 import BlogDetail from './components/Pages/BlogPage/BlogDetail';
-import { Toaster } from 'react-hot-toast';
-
+import SignInComponent from './components/SignInComponents';
+import ProtectedRoute from './components/ProtectedRoute';
 import { createBrowserRouter } from 'react-router';
 import { RouterProvider } from 'react-router/dom';
 import { blogEditLoader, blogListDetailLoader, blogListLoader } from './loader/blogLoaders';
@@ -27,22 +27,32 @@ const router = createBrowserRouter([
                 loader: blogListLoader,
             },
             {
-                path: '/blogs/create',
-                element: <BlogEditor />,
-                loader: blogEditLoader,
-                action: blogEditAction,
-            },
-            {
                 path: '/blogs/:id',
                 element: <BlogDetail />,
                 loader: blogListDetailLoader,
                 action: blogDeleteAction,
             },
             {
-                path: '/blogs/:id/edit',
-                element: <BlogEditor />,
-                loader: blogEditLoader,
-                action: blogEditAction,
+                element: <ProtectedRoute />,
+                children: [
+                    {
+                        path: '/blogs/:id/edit',
+                        element: <BlogEditor />,
+                        loader: blogEditLoader,
+                        action: blogEditAction,
+                    },
+                    {
+                        path: '/blogs/create',
+                        element: <BlogEditor />,
+                        loader: blogEditLoader,
+                        action: blogEditAction,
+                    },
+                ],
+            },
+
+            {
+                path: '/signin/*',
+                element: <SignInComponent />,
             },
         ],
     },
