@@ -7,7 +7,7 @@ function ProtectedRoute() {
         return <div>...Loading</div>;
     }
     if (!isSignedIn) {
-        return <Navigate to="/signin" />;
+        return <Navigate to="/signin" state={{ from: location }} replace />;
     }
     return <Outlet />;
 }
