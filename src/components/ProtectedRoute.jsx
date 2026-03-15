@@ -7,7 +7,7 @@ function ProtectedRoute() {
         return <div>...Loading</div>;
     }
     if (!isSignedIn) {
-        return <Navigate to="/sign-in" />;
+        return <Navigate to="/signin" />;
     }
     return <Outlet />;
 }
